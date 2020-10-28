@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
+   <children>
+      <Label layoutX="405.0" layoutY="58.0" text="Date" />
+      <TabPane layoutX="14.0" layoutY="158.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="120.0">
+        <tabs>
+          <Tab text="5 AM - 2PM">
+            <content>
+              <AnchorPane style="-fx-border-color: red;">
+                     <children>
+                        <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                          <tabs>
+                            <Tab text="Pompe 1 -2 ">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox layoutX="-348.0" layoutY="-218.0" spacing="35.0" style="-fx-background-color: lightblue;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <ComboBox fx:id="p1_p2_seller_name" layoutX="346.0" layoutY="4.0" promptText="Seller name" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <GridPane hgap="15.0" layoutX="14.0" layoutY="300.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                  <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints vgrow="SOMETIMES" />
+                                                    <RowConstraints vgrow="SOMETIMES" />
+                                                    <RowConstraints vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Disel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="G1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="G2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label text="P1" GridPane.rowIndex="2" />
+                                                      <Label text="P2" GridPane.rowIndex="3" />
+                                                      <Label text="Opening" />
+                                                      <TextField fx:id="seq1_opening_disel_p1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_opening_disel_p2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <TextField fx:id="seq1_opening_g1_p1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_opening_g1_p2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <TextField fx:id="seq1_opening_g2_p1" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_opening_g2_p2" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" layoutX="71.0" layoutY="472.0" prefHeight="74.0" prefWidth="823.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="P1" GridPane.rowIndex="1" />
+                                                      <Label text="P2" GridPane.rowIndex="2" />
+                                                      <Label text="Closing" />
+                                                      <TextField fx:id="seq1_closing_disel_p1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq1_closing_disel_p2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_closing_g1_p1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq1_closing_g1_p2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_closing_g2_p1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq1_closing_g2_p2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" vgap="5.0">
+                                                  <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints vgrow="SOMETIMES" />
+                                                    <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Amnt sold" />
+                                                      <Label text="Cash Sale" GridPane.rowIndex="1" />
+                                                      <Label fx:id="disel_amt_sold" text="#" GridPane.columnIndex="1" />
+                                                      <Label fx:id="g1_amt_sold" text="#" GridPane.columnIndex="2" />
+                                                      <Label fx:id="disel_cash_Sale" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g2_amt_sold" text="#" GridPane.columnIndex="3" />
+                                                      <Label fx:id="g2_cash_Sale" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g1_cash_Sale" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="Cash recieved" GridPane.rowIndex="2" />
+                                                      <Label fx:id="disel_cash_received" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g1_cash_received" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g2_cash_received" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <Label text="Balance" GridPane.rowIndex="3" />
+                                                      <Label fx:id="disel_balance" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g1_balance" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g2_balance" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                      <Label text="Total balance" GridPane.rowIndex="4" />
+                                                      <Label fx:id="total_balance" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                   </children>
+                                                </GridPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Pompe 3 - 4">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox layoutY="-7.0" spacing="35.0" style="-fx-background-color: lightblue;">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <ComboBox fx:id="p1_p2_seller_name2" layoutX="346.0" layoutY="4.0" promptText="Seller name" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <GridPane hgap="15.0" layoutX="14.0" layoutY="300.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="Disel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="G1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="G2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label text="P3" GridPane.rowIndex="2" />
+                                                      <Label text="P4" GridPane.rowIndex="4" />
+                                                      <Label text="Opening" />
+                                                      <TextField fx:id="seq1_opening_disel_p3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_opening_disel_p4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                      <TextField fx:id="seq1_opening_g1_p3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_opening_g1_p4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                      <TextField fx:id="seq1_opening_g2_p3" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_opening_g2_p4" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" layoutX="71.0" layoutY="472.0" prefHeight="74.0" prefWidth="823.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="P3" GridPane.rowIndex="1" />
+                                                      <Label text="P4" GridPane.rowIndex="2" />
+                                                      <Label text="Closing" />
+                                                      <TextField fx:id="seq1_closing_disel_p3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq1_closing_disel_p4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_closing_g1_p3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq1_closing_g1_p4" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq1_closing_g2_p3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq1_closing_g2_p4" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" vgap="5.0">
+                                                   <children>
+                                                      <Label text="Amnt sold" />
+                                                      <Label text="Cash Sale" GridPane.rowIndex="1" />
+                                                      <Label fx:id="disel_amt_sold3" text="#" GridPane.columnIndex="1" />
+                                                      <Label fx:id="g1_amt_sold3" text="#" GridPane.columnIndex="2" />
+                                                      <Label fx:id="disel_cash_Sale3" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g2_amt_sold3" text="#" GridPane.columnIndex="3" />
+                                                      <Label fx:id="g2_cash_Sale3" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g1_cash_Sale3" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="Cash recieved" GridPane.rowIndex="2" />
+                                                      <Label fx:id="disel_cash_received3" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g1_cash_received3" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g2_cash_received3" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <Label text="Balance" GridPane.rowIndex="3" />
+                                                      <Label fx:id="disel_balance3" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g1_balance3" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g2_balance3" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                      <Label text="Total balance" GridPane.rowIndex="4" />
+                                                      <Label fx:id="total_balance3" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="2 PM -10PM">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                          <tabs>
+                            <Tab text="Pompe 1 - 2">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0">
+                                       <children>
+                                          <VBox spacing="35.0" style="-fx-background-color: lightblue;">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <ComboBox fx:id="p1_p2_seller_name1" layoutX="346.0" layoutY="4.0" promptText="Seller name" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <GridPane hgap="15.0" layoutX="14.0" layoutY="300.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="Disel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="G1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="G2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label text="P1" GridPane.rowIndex="2" />
+                                                      <Label text="P2" GridPane.rowIndex="3" />
+                                                      <Label text="Opening" />
+                                                      <TextField fx:id="seq2_opening_disel_p1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_opening_disel_p2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <TextField fx:id="seq2_opening_g1_p1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_opening_g1_p2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <TextField fx:id="seq2_opening_g2_p1" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_opening_g2_p2" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" layoutX="71.0" layoutY="472.0" prefHeight="74.0" prefWidth="823.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="P1" GridPane.rowIndex="1" />
+                                                      <Label text="P2" GridPane.rowIndex="2" />
+                                                      <Label text="Closing" />
+                                                      <TextField fx:id="seq2_closing_disel_p1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq2_closing_disel_p2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_closing_g1_p1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq2_closing_g1_p2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_closing_g2_p1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq_closing_g2_p2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" vgap="5.0">
+                                                   <children>
+                                                      <Label text="Amnt sold" />
+                                                      <Label text="Cash Sale" GridPane.rowIndex="1" />
+                                                      <Label fx:id="disel_amt_sold2" text="#" GridPane.columnIndex="1" />
+                                                      <Label fx:id="g1_amt_sold2" text="#" GridPane.columnIndex="2" />
+                                                      <Label fx:id="disel_cash_Sale2" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g2_amt_sold2" text="#" GridPane.columnIndex="3" />
+                                                      <Label fx:id="g2_cash_Sale2" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g1_cash_Sale2" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="Cash recieved" GridPane.rowIndex="2" />
+                                                      <Label fx:id="disel_cash_received2" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g1_cash_received2" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g2_cash_received2" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <Label text="Balance" GridPane.rowIndex="3" />
+                                                      <Label fx:id="disel_balance2" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g1_balance2" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g2_balance2" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                      <Label text="Total balance" GridPane.rowIndex="4" />
+                                                      <Label fx:id="total_balance2" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Pompe 3 - 4">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox spacing="35.0" style="-fx-background-color: lightblue;">
+                                             <children>
+                                                <AnchorPane>
+                                                   <children>
+                                                      <ComboBox fx:id="p1_p2_seller_name21" layoutX="346.0" layoutY="4.0" promptText="Seller name" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <GridPane hgap="15.0" layoutX="14.0" layoutY="300.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="Disel" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="G1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="G2" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label text="P3" GridPane.rowIndex="2" />
+                                                      <Label text="P4" GridPane.rowIndex="4" />
+                                                      <Label text="Opening" />
+                                                      <TextField fx:id="seq2_opening_disel_p3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_opening_disel_p4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                      <TextField fx:id="seq2_0opening_g1_p3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_opening_g1_p4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                      <TextField fx:id="seq2_opening_g2_p3" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_opening_g2_p4" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" layoutX="71.0" layoutY="472.0" prefHeight="74.0" prefWidth="823.0" vgap="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <children>
+                                                      <Label text="P3" GridPane.rowIndex="1" />
+                                                      <Label text="P4" GridPane.rowIndex="2" />
+                                                      <Label text="Closing" />
+                                                      <TextField fx:id="seq2_closing_disel_p3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq2_closing_disel_p4" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_closing_g1_p3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq2_closing_g1_p4" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <TextField fx:id="seq2_closing_g2_p3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <TextField fx:id="seq2_closing_g2_p4" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                                <GridPane hgap="15.0" vgap="5.0">
+                                                   <children>
+                                                      <Label text="Amnt sold" />
+                                                      <Label text="Cash Sale" GridPane.rowIndex="1" />
+                                                      <Label fx:id="disel_amt_sold31" text="#" GridPane.columnIndex="1" />
+                                                      <Label fx:id="g1_amt_sold31" text="#" GridPane.columnIndex="2" />
+                                                      <Label fx:id="disel_cash_Sale31" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g2_amt_sold31" text="#" GridPane.columnIndex="3" />
+                                                      <Label fx:id="g2_cash_Sale31" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                      <Label fx:id="g1_cash_Sale31" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                      <Label text="Cash recieved" GridPane.rowIndex="2" />
+                                                      <Label fx:id="disel_cash_received31" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g1_cash_received31" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                      <Label fx:id="g2_cash_received31" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                                      <Label text="Balance" GridPane.rowIndex="3" />
+                                                      <Label fx:id="disel_balance31" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g1_balance31" text="\$$" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                      <Label fx:id="g2_balance31" text="\$$" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                      <Label text="Total balance" GridPane.rowIndex="4" />
+                                                      <Label fx:id="total_balance31" text="\$$" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                   </children>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                      <RowConstraints vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                </GridPane>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
